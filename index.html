@@ -475,7 +475,7 @@
             <div class="flex flex-col items-center gap-2">
                 <img src="https://i.ibb.co/VpVZtGXk/Screenshot-2025-05-23-044607.png" alt="Profile Picture" class="profile-img" id="profileImage">
                 <h1 class="name" id="profileName">your name</h1>
-                <p class="tagline" id="profileTagline">Manager | Athlete (personal page)</p>
+                <p class="tagline" id="profileTagline">Visionary Founder</p>
                 <div class="micro-stats flex justify-center gap-2">
                     </div>
             </div>
@@ -502,9 +502,9 @@
                 <div class="profile-mode-switcher flex flex-col items-center gap-3 mt-4">
                     <p class="text-sm text-gray-400">Switch Mode:</p>
                     <div class="flex flex-wrap justify-center gap-2">
-                        <button class="action-button text-sm px-3 py-1.5" data-mode="Rajith">Rajith</button>
-                        <button class="action-button text-sm px-3 py-1.5" data-mode="Manager">Manager</button>
-                        <button class="action-button text-sm px-3 py-1.5" data-mode="Athlete">Athlete</button>
+                        <button class="action-button text-sm px-3 py-1.5" data-mode="Founder">Rajith</button>
+                        <button class="action-button text-sm px-3 py-1.5" data-mode="ZENORA">Manager</button>
+                        <button class="action-button text-sm px-3 py-1.5" data-mode="Raaj Farms">Athlete</button>
                     </div>
                 </div>
             </div>
@@ -512,9 +512,9 @@
                 <button id="backToMainBack" class="absolute top-4 left-4 text-xl text-gray-300 hover:text-white focus:outline-none z-30">
                     <i class="fas fa-arrow-left mr-2"></i> Back
                 </button>
-                <h3 class="text-2xl font-bold text-center mb-4 mt-12">About ZENORA</h3>
+                <h3 class="text-2xl font-bold text-center mb-4 mt-12">About Rajith</h3>
                 <p class="text-base text-gray-300 text-center flex-grow overflow-y-auto custom-scrollbar leading-relaxed">
-At Zenora Al, we believe the future is built, not predicted. This vision is the hard work of our Manager, Rajith Raaj - a student entrepreneur, relentless creator, and a dreamer. Rajith's journey began as a curious student who loved solving real problems with code, slowly turning that passion into purpose.
+At Zenora Al, we believe the future is built, not predicted. This vision is the hard work of our founder, Rajith Raaj - a student entrepreneur, relentless creator, and a dreamer. Rajith's journey began as a curious student who loved solving real problems with code, slowly turning that passion into purpose.
 
 He didn't come from big resources or fancy offices - just a strong will to create something meaningful with what he had. His goal: ensure high-end tech isn't locked behind corporate walls, but made available to everyone.
 
@@ -530,26 +530,28 @@ Whether you're a student, a doctor, or a working professional, our mission is to
     <script>
         // --- Configuration & Data ---
         const profileData = {
-            Rajith: {
+            Founder: {
                 name: "your name",
-                tagline: "Manager| Athlete (personal page) ",
+                tagline: "Manager | Athlete (personal page) ",
                 phoneNumber: "+91 98400123456", // Updated to the only number
                 emailAddress: "rajithraaj.r@gmail.com", // Updated to the only email
-                microStats: ["Software Developer","Runner Athlete""text 3"], // Updated
+                microStats: ["Manager", "text 2","Athlete"], // Updated
   social: {
+                    website: "https://zenora-ai.vercel.app/",
                     linkedin: "https://linkedin.com/in/rajithraaj",
                     instagram: "https://www.instagram.com/zenora.ai/",
                     whatsapp: "https://wa.link/d13a9v",
                     facebook: "https://www.facebook.com/zuck/"
                 }
             },
-            "Manager": {
-                name: "Rajith",
-                tagline: "Manager at ZENORA",
+            "ZENORA": {
+                name: "Manager",
+                tagline: "Manager-ZENORA",
                 phoneNumber: "+91 98400123456", // Updated to the only number
                 emailAddress: "rajithraaj.r@gmail.com", // Updated to the only email
-                microStats: ["10 years experience","Full-stack Developer",], // Updated with new and specific stats
+                microStats: ["Software Developer","8 years Experience",], // Updated with new and specific stats
                 social: {
+                    website: "https://zenora-ai.vercel.app/",
                     linkedin: "https://in.linkedin.com/in/rajith-raaj-09253933b",
                     whatsapp: "https://api.whatsapp.com/send/?text=ive%20used%20a%20dummy%20link%20here,%20but%20this%20link%20opens%20your%20whatsapp%20Dm%27+++-++message&type=custom_url&app_absent=0",
                     facebook: "https://www.facebook.com/demo.link.3/",
@@ -557,11 +559,11 @@ Whether you're a student, a doctor, or a working professional, our mission is to
                 }
             },
             "Athlete": {
-                name: "Rajith Raaj",
-                tagline: "Train,Transform,Thrive",
+                name: "Athlete",
+                tagline:"Train,Transform,Thrive",
                 phoneNumber: "+91 98400123454", // Updated to the only number
                 emailAddress: "rajithraaj.r@gmail.com", // Updated to the only email
-                microStats: ["5 x Marathon winner", "Elite Athlete"], // Updated with new and specific stats
+                microStats: ["5x Marathon winner", "Elite Athlete"], // Updated with new and specific stats
                 social: {
                     website: "https://zenora-ai.vercel.app/",
                     linkedin: "https://in.linkedin.com/in/rajith-raaj-09253933b",
@@ -571,7 +573,7 @@ Whether you're a student, a doctor, or a working professional, our mission is to
                 }
             }
         };
-        let currentMode = 'Rajith'; // Default mode
+        let currentMode = 'Founder'; // Default mode
         let isFlipped = false;
         // --- DOM Elements ---
         const loadingOverlay = document.getElementById('loadingOverlay');
